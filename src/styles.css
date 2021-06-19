@@ -1,0 +1,99 @@
+body {
+    background-image: url(../img/10193982.jpg);
+}
+
+h1 {
+    margin: 20px 0px;
+    font-weight: 900;
+}
+
+h2 {
+    font-weight: 700;
+    margin-left: 30px;
+}
+
+p {
+    margin: 0; 
+    margin-left: 30px;
+}
+
+p::first-letter {
+    text-transform: capitalize;
+}
+
+strong {
+    font-weight: 900;
+}
+
+.card {
+    /* font-family: "Gill Sans", sans-serif; */
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: #364e68;
+    
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+    max-width: 800px;
+    background: linear-gradient(178deg, rgba(201, 234, 252, 0.51) 14.9%, rgba(139, 192, 216, 0.73) 80%);
+    /* background: linear-gradient(to top, #09203f 0%, #537895 100%); */
+    border: none;
+    border-radius: 20px;
+    box-shadow: 10px 20px 20px rgb(54,78,104, 0.5);
+}
+
+.card-body {
+    margin: 20px;
+    padding: 50px 20px;
+}
+
+.search-form {
+    margin: 10px 0px;
+}
+
+.temperature-units .active {
+    color: #364e68;
+    cursor: default;
+}
+
+.temperature-units .active:hover {
+    text-decoration: none;
+}
+
+.signature {
+    text-align: center;
+}
+
+#search-city{
+    box-shadow: 2px 2px 2px rgb(54,78,104, 0.1);
+    border-radius: 20px;
+}
+
+#check-btn {
+    background:rgb(54,78,104);
+    border: none;
+    box-shadow: 4px 4px 4px rgb(54,78,104, 0.1);
+    transition: all 200ms ease-in-out;
+    border-radius: 20px;
+}
+
+#check-btn:hover {
+    background: #132238;
+}
+
+#icon {
+    width: 100px;
+    margin: 10px 10px;
+}
+#temperature{
+    font-size: 80px;
+}
+#units {
+    position: relative;
+    top: -45px;
+}
+
+#indicators {
+    font-size: 15px;
+    margin: 30px 0px;
+}

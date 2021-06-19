@@ -4,9 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,600;1,700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body>
-    Hello World
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <h1>
+                What's the weather in ...?
+            </h1>                                     
+                <form class="search-form" id="search-form">
+                    <div class="row">
+                        <div class="col-10">
+                            <div class="mb-3">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Enter a city..."
+                                    id="search-city"
+                                />
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <input type="submit" class="btn btn-primary" value="Search" id="check-btn"/>
+                        </div>
+                    </div>
+                </form>
+                <div class="row">
+                    <div class="col-6">
+                        <img src="" alt="" class="float-left" id="icon">
+                        <div class="float-left temperature-units">
+                            <span id="temperature"></span><span id="units">
+                            <a href="#" id="celcius" class="active">°C</a> |
+                            <a href="#" id="fahrenheit">°F</a>
+                            
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div id="indicators">
+                            <strong>Feels like</strong>: <span id="feels-like"></span>°C<br />
+                            <strong>Humidity</strong>: <span id="humidity"></span>%<br />
+                            <strong>Wind </strong>: <span id="wind"></span>km/h 
+                        </div>
+                    </div>
+                </div>
+                <h2><span id="city"></span>, <span id="country"></span></h2> 
+                <p class="date" id="currentDate"></p> 
+                <p id="description"></p>
+        </div>
+    </div>    
+    <div class="signature">
+        <a href="https://github.com/vannguyen0201/My-Weather-App">Open-source code</a> by LittleVan
+    </div>
+</div>
+<script src="src/index.js"></script>
 </body>
 </html>
