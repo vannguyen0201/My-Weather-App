@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,600;1,700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/02a889d03a.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="container">
@@ -18,23 +19,30 @@
             <h1>
                 What's the weather in ...?
             </h1>                                     
-                <form class="search-form" id="search-form">
-                    <div class="row">
-                        <div class="col-10">
-                            <div class="mb-3">
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    placeholder="Enter a city..."
-                                    id="search-city"
-                                />
+            <div class="row" id="search-bar">
+                <div class="col-10">
+                    <form class="search-form" id="search-form">
+                            <div class="row">
+                                <div class="col-10">
+                                    <div class="mb-3">
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            placeholder="Enter a city..."
+                                            id="search-city"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <input type="submit" class="btn btn-primary" value="Search" id="check-btn"/>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-2">
-                            <input type="submit" class="btn btn-primary" value="Search" id="check-btn"/>
-                        </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
+                <div class="col-2">
+                    <button class="btn btn-success" id="current-location"/>  <i class="fas fa-map-pin"> </i></button>
+                </div>
+            </div>
                 <div class="row">
                     <div class="col-6">
                         <img src="" alt="" class="float-left" id="icon">
@@ -56,6 +64,9 @@
                 <h2><span id="city"></span>, <span id="country"></span></h2> 
                 <p class="date" id="currentDate"></p> 
                 <p id="description"></p>
+                <div id="weather-forecast">
+                
+            </div>
         </div>
     </div>    
     <div class="signature">
